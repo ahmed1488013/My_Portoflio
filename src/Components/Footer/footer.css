@@ -1,0 +1,206 @@
+.Footer {
+  margin: 50px 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer-logo {
+  position: relative;
+  width: fit-content;
+  margin: 10px 0;
+}
+
+.footer-logo h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.footer-logo img {
+  width: 60px;
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  z-index: -1;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.top-left p {
+  font-size: 18px;
+  max-width: 400px;
+  color: #d8d8d8;
+  line-height: 1.6;
+}
+
+.top-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.email-input {
+  display: flex;
+  gap: 20px;
+  padding: 18px 25px;
+  border-radius: 50px;
+  background-color: #32323b;
+  padding-right: 70px;
+  transition: border 0.3s ease;
+}
+
+.email-input input {
+  outline: none;
+  border: none;
+  background: transparent;
+  color: #a0a0a0;
+  font-size: 18px;
+}
+
+.email-input:hover {
+  border: 2px solid #fff;
+}
+
+.subscribe {
+  font-size: 20px;
+  padding: 18px 45px;
+  border-radius: 50px;
+  color: #fff;
+  background: linear-gradient(264deg, #df8908 -5.06%, #b415ff 106.28%);
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.subscribe:hover {
+  transform: scale(1.08);
+  background: linear-gradient(264deg, #8908df -5.06%, #ff7e15 106.28%);
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  color: #d8d8d8;
+}
+
+.bottom-right {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+/* شاشات كبيرة */
+@media (min-width: 1200px) {
+  .Footer {
+    margin: 50px 15%;
+  }
+
+  .footer-logo h2 {
+    font-size: 36px;
+  }
+
+  .top-left p {
+    font-size: 20px;
+  }
+
+  .subscribe {
+    font-size: 22px;
+  }
+}
+
+/* شاشات متوسطة (أجهزة لوحية أفقية) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .Footer {
+    margin: 50px 12%;
+  }
+
+  .footer-logo h2 {
+    font-size: 32px;
+  }
+
+  .top-left p {
+    font-size: 18px;
+  }
+
+  .subscribe {
+    font-size: 20px;
+    padding: 18px 40px;
+  }
+}
+
+/* شاشات متوسطة (أجهزة لوحية عمودية) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .Footer {
+    margin: 50px 8%;
+  }
+
+  .top {
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  .footer-logo h2 {
+    font-size: 28px;
+  }
+
+  .top-left p {
+    font-size: 16px;
+  }
+
+  .subscribe {
+    font-size: 18px;
+  }
+}
+
+/* شاشات صغيرة (هواتف) */
+@media (max-width: 767px) {
+  .Footer {
+    margin: 50px 5%;
+  }
+
+  .top {
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+
+  .footer-logo h2 {
+    font-size: 24px;
+  }
+
+  .top-left p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .top-right {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .email-input {
+    width: 100%;
+    padding: 15px 20px;
+  }
+
+  .subscribe {
+    width: 100%;
+    text-align: center;
+    padding: 15px 40px;
+  }
+
+  .bottom {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+  }
+}

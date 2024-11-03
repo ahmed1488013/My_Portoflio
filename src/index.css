@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    font-family: "Outfit", serif;
+  height: 100vh;
+  background-color: #161513;
+  color: white;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
